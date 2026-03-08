@@ -39,8 +39,3 @@ Beyond standard lecture notes, this project includes additional development mate
 * **Clinical Dosimetry:** Absorbed dose, Kerma, and Equivalent dose.
 * **Radiological Protection:** Shielding design and ICRP/IAEA safety regulations.
 * **Nuclear Medicine:** Radiopharmaceuticals and PET/SPECT imaging physics.
-
----
-
-## ✍️ About this Project
-This is an evolving project as I progress through my **Physics** studies. It is my personal "toolbox" for transforming complex theory into safe and efficient clinical solutions.
