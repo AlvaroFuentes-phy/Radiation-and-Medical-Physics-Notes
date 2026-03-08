@@ -14,3 +14,5 @@ The script provides a deep numerical and visual analysis of nuclear stability:
 * **Stability Curve:** Visualization of Binding Energy per Nucleon ($BE/A$) highlighting the **Fe-56** peak.
 * **Valley of Stability:** A 2D heatmap (Nuclide Chart) showing the energy landscape and **Magic Numbers** ($2, 8, 20, 28, 50$).
 * **Reaction Analysis:** Quantitative calculation of energy released during **U-235 Fission** and **D-T Fusion**.
+<img width="1500" height="990" alt="plots" src="https://github.com/user-attachments/assets/93d041f4-4810-48b2-8047-2d8a5b335224" />
+<img width="1500" height="990" alt="plot_estabilidad" src="https://github.com/user-attachments/assets/681e38e4-2a96-4dfd-b76f-8d73b51596e8" />
