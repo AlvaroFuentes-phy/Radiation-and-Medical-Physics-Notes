@@ -1,8 +1,12 @@
-**Orbital_Visualizer.m**: This program calculates and draws atomic orbitals by solving the angular and radial components of the hydrogenic wave function. Choose the principal, azimuthal, and magnetic quantum numbers to visualize the resulting 3D geometry.
+# Radiation and Medical Physics - MATLAB Suite
+
+This directory includes several complementary programs developed for the **Radiation and Medical Physics** course.
+
+**1. Orbital_Visualizer.m**: This program calculates and draws atomic orbitals by solving the angular and radial components of the hydrogenic wave function. Choose the principal, azimuthal, and magnetic quantum numbers to visualize the resulting 3D geometry.
 
 This repository contains a comprehensive **MATLAB implementation** of the Liquid Drop Model, focusing on the **Semi-Empirical Mass Formula (SEMF)**. This project is part of a study on Ionizing Radiation and the fundamentals of Atomic and Nuclear Physics.
 
-## 1. Physical Theoretical Framework
+## 2. Physical Theoretical Framework
 The simulation is based on the **Weizsäcker-Bohr formula**, which treats the atomic nucleus as a drop of incompressible nuclear fluid. The binding energy ($B$) is determined by five key physical terms:
 
 1. **Volume Term:** Cohesive force proportional to the number of nucleons ($A$).
