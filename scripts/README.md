@@ -15,7 +15,7 @@ The simulation is based on the **Weizsäcker-Bohr formula**, which treats the at
 4. **Asymmetry Term:** Energy penalty for $N \neq Z$ imbalances.
 5. **Pairing Term:** Quantum effect based on even/odd nucleon numbers.
 
-## 2. Key Features
+## 3. Key Features
 The script provides a deep numerical and visual analysis of nuclear stability:
 * **Stability Curve:** Visualization of Binding Energy per Nucleon ($BE/A$) highlighting the **Fe-56** peak.
 * **Valley of Stability:** A 2D heatmap (Nuclide Chart) showing the energy landscape and **Magic Numbers** ($2, 8, 20, 28, 50$).
