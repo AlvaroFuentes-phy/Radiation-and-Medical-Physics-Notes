@@ -3,7 +3,7 @@ A comprehensive collection of study notes and resources focused on the physics o
 
 Here is the complete README.md file in English. It combines the professional physics perspective with the explanation of how this repository complements your degree.
 
-Markdown
+
 # Ionizing Radiation & Medical Physics Archive ☢️🩺
 
 This repository is a centralized hub for my technical documentation, study notes, and research regarding the physics of ionizing radiation and its vital applications in the clinical field.
