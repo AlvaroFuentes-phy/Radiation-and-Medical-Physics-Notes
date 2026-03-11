@@ -22,3 +22,18 @@ The script provides a deep numerical and visual analysis of nuclear stability:
 * **Reaction Analysis:** Quantitative calculation of energy released during **U-235 Fission** and **D-T Fusion**.
 
 <img width="1500" height="990" alt="plot_estabilidad" src="https://github.com/user-attachments/assets/681e38e4-2a96-4dfd-b76f-8d73b51596e8" />
+
+### 3. IMRT Dose Optimization Simulator (`IMRT_Planner.m`)
+
+A high-level simulation of **Intensity Modulated Radiation Therapy (IMRT)** focusing on bone marrow treatments. This tool demonstrates the physics of "Inverse Planning" and computational dosimetry through an objective-based optimization approach.
+
+* **Dose Influence Matrix ($A_{ij}$):** Computes the geometric and physical deposition of energy from multiple beamlets using ray-casting and attenuation approximations. It maps the contribution of each individual beamlet to every voxel in the patient's anatomy.
+* **Inverse Planning Optimization:** Solves a non-negative least squares problem to find the optimal beam weights ($w$) that satisfy clinical constraints:
+    $$\min_{w \ge 0} \|Aw - D_{target}\|^2$$
+* **Clinical Dosimetry Tools:**
+    * **Isodose Maps:** 2D spatial distribution of absorbed dose in Gray (Gy) overlaid on the anatomical phantom.
+    * **DVH (Dose-Volume Histogram):** Quantitative evaluation of target coverage (Bone Marrow) vs. Organ at Risk (OAR) sparing, essential for clinical plan approval.
+
+
+
+* **Configurable Parameters:** Adjustable beam angles (gantry positions), beamlet resolution, and importance weighting factors to balance target prescription versus healthy tissue protection.
