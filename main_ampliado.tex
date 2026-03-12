@@ -1,0 +1,346 @@
+\documentclass{beamer}
+
+% Theme choice
+\usetheme{Frankfurt}
+\usecolortheme{rose} % Colores profesionales
+
+% Paquetes adicionales
+\usepackage{graphicx} % Para insertar gráficos
+\usepackage{listings} % Para insertar código
+\usepackage{xcolor}   % Para personalizar colores
+\usepackage{caption}  % Para personalizar captions
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8}
+
+\newtheorem{ejemplo}{Ejemplo}
+
+
+% Configuración de listings para código
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false,
+    tabsize=4
+}
+
+% Título y detalles
+\title[Aplicaciones Físicas a la Oncología]{Aplicaciones Físicas a la Oncología}
+\author[Fuentes,Romero]{Álvaro Fuentes, Eva Romero}
+\institute[UCO]{Universidad de Córdoba}
+
+
+\begin{document}
+
+% Portada
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Tabla de contenidos
+\begin{frame}{Índice}
+    \tableofcontents
+\end{frame}
+\begin{frame}{Abstract}
+    
+\end{frame}
+\section{Motivación}
+\begin{frame}{Motivación}
+\begin{center}
+   \begin{quote}
+    El cáncer es ubicuo en la población humana; la única manera cierta de evitarlo consiste en no nacer, ya que vivir supone un riesgo
+    --- \textit{Extraido del Compendio Patología Estructural y Funcional de Robbins y Cotran}
+\end{quote} 
+\end{center}
+
+Cuando hablamos del cáncer nos referimos a un conjunto de enfermedades relacionadas en las que se observa un proceso descontrolado en la división de células del cuerpo. Si tomamos la definición de Rupert Allan Willis, un patólogo australiano, una neoplasia es una \textbf{masa anormal de tejido cuyo crecimiento excede el de los tejidos normales} y no está relacionado con estos, que persiste del mismo modo excesivo aún después de finalizar el estímulo que le dio origen. Por lo general, sin el tratamiento correspondiente conduce a la muerte del paciente.
+\end{frame}
+
+\begin{frame}{Motivación. Comportamiento de las células canceresosas } La malignidad del cáncer es muy variable, según la agresividad de sus células y demás características biológicas de cada tipo tumoral.  
+
+\begin{block}{Comportamiento de las células cancerosas}
+    El comportamiento de las células cancerosas se caracteriza por carecer del control reproductuvo que requiere su función original, perdiendo sus características primitivas y adquiriendo otras que no les corresponden, como la capacidad de invadir de forma progresiva y por distintas vías a órganos próximos (metástasis), con crecimiento y división más alla de los límites normales del órgano diseminándose por el organismo fundamentalmente a través del sistema linfático o el sistema circulatorio y ocasionando el crecimiento de nuevos tumores en otras partes del cuerpo alejadas de la localización original.  
+\end{block}
+\end{frame}
+
+\begin{frame}{Motivación. Metástasis}
+\begin{block}{Definición de Metástasis}
+    Diseminación de células cancerosas desde el lugar donde se formó el cáncer por primera vez hasta otra parte del cuerpo. La metástasis se presenta cuando las células cancerosas se desprenden del tumor original (primario), viajan por el cuerpo a través de la sangre o el sistema linfático y forman un tumor nuevo en otros órganos o tejidos. El nuevo tumor metastásico es el mismo tipo de cáncer que el tumor primario. Por ejemplo, si el cáncer de mama se disemina al pulmón, las células cancerosas del pulmón son células de cáncer de mama, no son células de cáncer de pulmón. También se llama metástasis cancerosa.
+\end{block}
+\end{frame}
+\begin{frame}{Motivación. Metástasis}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{metastasis.png}
+        \caption{En la metástasis, las células cancerosas se desprenden del tumor original (cáncer primario), viajan a través de la sangre y el sistema linfático, y forman nuevos tumores (tumores metastásicos) en otras partes del cuerpo. El tumor metastásico es el mismo tipo de cáncer que el tumor primario.}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+\begin{frame}{Motivación. Metástasis}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{sistema_linfático.png}
+    \caption{Sistema linfático y localizaciones principales de ganglios en el organismo. Detalle de grupo de ganglios y de un ganglio linfático individual}
+    \label{fig:placeholder}
+\end{figure}
+\end{frame}
+\begin{frame}{Motivación. Estadios del cáncer}
+Se refiere a la extensión anatómica de la enfermedad en el organismo, es decir, cuánto ha crecido el tumor original y si se ha diseminado a ganglios linfáticos u otros órganos. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{estadios.png}
+    \caption{Estadios en el cáncer de mama}
+    \label{fig:placeholder}
+\end{figure}
+\end{frame}
+\begin{frame}
+Determinar el estadio implica estudiar el tamaño del tumor, la afectación de ganglios linfáticos cercanos y la presencia de metástasis en otros lugares del cuerpo. Para la mayoría de cánceres sólidos se utiliza el sistema de estratificación TNM: T (tumor) describe el tamaño o invasión del tumor primario, N (nodes) indica si hay ganglios linfáticos afectados, M (metastasis) señala si el cáncer se ha propagado a otros órganos. 
+\\
+\begin{block}{Formación de tumores}
+La célula cancerosa o tumoral “pierde” la capacidad para morir y se divide casi sin límite 
+\end{block} 
+Por lo general, el cuerpo tiene mecanismos extraordinariamente eficientes para reparar el ADN dañado o eliminar células defectuosas antes de que se vuelvan tumorales. Sin embargo, los errores en el ADN se van acumulando cuantas más veces se multiplican las células y la eficiencia de estas reparaciones disminuye con la edad.
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{formación_tumoral.png}
+        \caption{Mecanismo de iniciación del cáncer. A partir de mutaciones (heredadas o provocadas por agentes externos), junto con la capacidad de evadir los mecanismos biológicos de reparación de ADN y muerte celular, aparecen células malignas que darán lugar a un cáncer.}
+        \label{fig:placeholder}
+    \end{figure}
+Más información se puede obtener en \cite{cris_cancer}
+\end{frame}
+
+\begin{frame}{Motivación. Clasificación de tipos de cáncer}
+    Una forma fundamental de clasificar los tipos de cáncer es por el tipo de tejido o célula donde se originan. El tipo de célula tumoral de origen determina en gran parte el comportamiento del tumor y las terapias que se aplican
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{tipos_cancer.png}
+        \caption{Clasificación histológica de los tipos de cáncer}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+\section{Introducción}
+\begin{frame}{¿Que puede aportar la Física a la Oncología?}
+    
+\end{frame}
+
+\section{Modelos de crecimiento tumoral}
+\begin{frame}{Modelos de crecimiento tumoral. Ecuación logísitca}
+El enfoque más básico asume que el tumor es una masa homogénea que crece en el tiempo. Para ello, se utiliza el \textbf{modelo logístico de Verhulst}, regido por el siguiente problema de valor inicial:
+\begin{equation}
+    \dot{x}=ax(t)\Biggl(1-\frac{x(t)}{K}\Biggl)
+\end{equation}
+con $x(0)=x_0$
+La solución analítica a esta ecuación diferencial ordinaria muestra cómo la población tumoral $x(t)$ evoluciona desde $x_0$ hasta estabilizarse en su capacidad de carga $K$:
+\begin{equation}
+    x(t)=\frac{K' Ke^{at}}{1+K'e^{at}}
+\end{equation}
+con $K'=x_0/(K-x_0)$ la constante de integración.
+\end{frame}
+\begin{frame}{Modelos de crecimiento tumoral. Competición de dos especies}
+Para modelar la interacción entre células sanas $x(t)$ y cancerosas $y(t)$, ampliamos el sistema acoplando dos ecuaciones
+\begin{equation}
+    \dot{x}=r_{x}x\Biggl(1-\frac{x+\lambda_{yx}y}{K}\Biggl)
+\end{equation}
+\begin{equation}
+  \dot{y}=r_{y}y\Biggl(1-\frac{y+\lambda_{xy}x}{K}\Biggl)  
+\end{equation}
+La matriz jacobiana evaluada en los disntitos puntos de equilibrio determina el destino del tejido. Para que exista una coexistencia estable (un tumos que no extingue por completo a uno sano, ni es eliminado), los valores propios de la matriz jacobiana deben tener parte real negativa. 
+\end{frame}
+\begin{frame}{Modelos de crecimiento tumoral. Modelo de Cuasiespecies}
+Para capturar cómo las células cancerosas acumulan mutaciones, se recurre a la ecuación del \textbf{replicador-mutador.} Si denotamos como $x_i$ es la fracción poblacional de la especie $i$, el sistema evoluciona según: 
+\begin{equation}
+    \frac{dx_i}{dt}=x_i\Biggl(\phi_i-\phi_i\sum_{j \neq i}q_{ij}+\sum_{j \neq i} \phi_j \,q_{ji} -\Phi \Biggl)
+\end{equation}
+En este modelo, $\phi_i$ representa el grado de adaptación de la especie, $q_{ij}$ es la probabilidad de mutar de la especie $i$ a la especie $j$, y $\Phi$ es el grado de adaptación medio de toda la población
+\end{frame}
+
+\begin{frame}{Modelos de crecimiento tumoral. Crecimiento Espacial No Uniforme}
+Cuando el tumor no solo crece, sino que sus células migran invadiendo tejido adyacente, pasamos a un modelo continuo en el espacio utilizando ecuaciones de reacción-difusión. Al combinar la ley de conservación de la masa con la ley de difusión de Fick, obtenemos la ecuación de Fisher:
+\begin{equation}
+    y_t=dy_{xx}+ay(K-y)
+\end{equation}
+Aqui, el término $dy_{xx}$ actúa como el operador laplaciano unidimensional que rige la dispersión espacial de las células (donde $d$ es el coeficiente de difusión), y el término $ay(K-y)$ es el término reactivo logístico que dicta la proliferación local.
+Un desarrollo matemático integro de estos modelos se encuentra en \cite{garcia2021}
+\end{frame}
+
+
+\section{Radioterapias}
+\begin{frame}{Radioterapias}
+La \textbf{oncología radioterápica}es una especialidad que ha contribuido de manera incuestionable a los avances realizados en los últimos años en el tratamiento del cáncer. Se
+calcula que aproximadamente el $60\%$ de los pacientes con cáncer recibirán radioterapia
+como parte del cuidado de su enfermedad, y la innovación en las técnicas y esquemas
+de fraccionamiento ha permitido impactar positivamente en la cantidad y calidad de
+vida de los pacientes. 
+\end{frame}
+
+\begin{frame}{Teleterapias}
+Hablar de radioterapia es hablar de un conjunto de técnicas que usan radiaciones ionizantes para atacar la formación de tumores e intentar suprimirlos. Nosotros vamos a centrarnos en hablar de radioterapias externas, las \textbf{teleterapias}.
+
+\begin{block}{Teleterapias}
+La teleterapia es un tratamiento oncológico local que utiliza máquinas, como el acelerador lineal, para dirigir haces de radiación de alta energía (fotones, electrones o protones) desde fuera del cuerpo hacia el tumor. Es el tipo más común de radioterapia, diseñada para eliminar células cancerosas, reducir el tumor o prevenir recurrencias, limitando el daño a tejidos sanos.
+\end{block}    
+\end{frame}
+
+\begin{frame}{Teleterapias. El acelerador lineal}
+\begin{block}{El acelerador lineal}
+Un acelerador médico lineal (LINAC, por sus siglas en inglés) personaliza los rayos X de alta energía, o electrones, para que se ajusten a la forma de un tumor y destruyan las células cancerosas sin afectar el tejido normal circundante.
+\end{block}
+El LINAC utiliza cavidades de radiofrecuencia (RF) para crear campos eléctricos oscilantes. Los electrones se inyectan en "paquetes" que viajan sobre la cresta de la onda electromagnética.
+La fuerza (de Lorentz) que experimenta el electrón viene dada por: 
+\begin{equation}
+    \vec{F}=q(\vec{E}+\vec{v}\times \vec{B})
+\end{equation}
+\end{frame}
+
+\begin{frame}
+En la sección de aceleración, el componente principal es el campo eléctrico longitudinal. Debido a las velocidades relativistas, usamos la relación de la energía de Einstein:
+\begin{equation}
+    E_{\text{total}}=\sqrt{(pc)^2+(m_0c^2)^2}
+\end{equation}
+Donde $m_0$ es la masa en reposo del electrón ($0.511 \text{MeV}$). Un LINAC médico típico aceleta electrones en un rango de energía de entre 4 a 25 MeV
+\end{frame}
+\begin{frame}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{LINAC.png}
+    \caption{   Componentes fundamentales de un LINAC: fuente de electrones (A); generador de radiofrecuencia (B1); modulador de pulsos (B2); guía de onda de aceleración (C); sistema de deflexión (D); bombas de vacío (E1); sistema de aire a presión (E2); sistema de enfriamiento de agua (E3); sistema de blindaje (E4) y cabezal (F).  }
+    \label{fig:LINAC}
+\end{figure}
+    
+\end{frame}
+\begin{frame}{Teleterapias. Producción de Fotones por radiación de frenado}
+Cuando estos electrones acelardos impactan contra un blanco sufren una desaceleració brusca al interactuar con el campo coulombiano de los núcleos. Este proceso se llama \textbf{Bremsstrahlung }(radiación de frenado).
+La intensidad de la radiación emitida es proporcional al número atómico del blanco y al cuadrado de la eenrgía de los electrones: 
+\begin{equation}
+    I \propto
+    Z \cdot \, E^2
+\end{equation}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{radiacion_frenado.png}
+        \caption{Radiación de frenado producida por un electrón de alta energía desviado en el campo eléctrico de un núcleo atómico.}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+\begin{frame}{Bremsstrahlung. Descripción clásica}
+Si desprecimos los efectos cuánticos, una partícula cargada en aceleración irradiará una potencia según es descrita por la \textbf{fórmula de Larmor}. La potencia irradiada total es: 
+\begin{equation}
+    P=\frac{q^2 \gamma^4}{6\pi \varepsilon_0c} \Biggl(\dot{\beta}^2\frac{(\beta\cdot\dot{\beta)}^2}{1-\beta^2} \Biggl)
+\end{equation}
+donde $\beta=\frac{v}{c}$ y $\gamma$ es el factor de Lorentz. En el caso de un movimiento lineal como el que usan los LINAC la expresión se reduce a 
+\begin{equation}
+P_{a||b}=\frac{q^2a^2\gamma^4}{6\pi\varepsilon_0c^2}
+\end{equation}
+En este caso, la potencia irradiada es proporcional a $m^{-6}$; esta es la razón por la cual los electrones pierden energía mediante este tipo de radiación mucho más rápidamente que las partículas pesadas
+\end{frame}
+
+\subsection{Radioterapias IMRT}
+
+\begin{frame}{Radioterapias de Intensidad Modulada (IMRT)}
+Las IMRT se trata de una evolución técnica de la radioterapia convencional que utiliza la física de la superposición de haces y la optimización inversa para adaptar la dosis de radiación a la geometría tridimensional de un tumor. Mientras que en la radioterapia estándar el haz es uniforme, en la IMRT el haz se divide en miles de pequeños haces (\textbf{beamlets}) con intensidades variables. La intensidad total o \textbf{fluencia} $\Psi$ en un punto (x,y) del plano del haz es la suma integrada en el tiempo que ese punto permanece abierto mientras las hojas se mueven: 
+\begin{equation}
+    \Psi(x,y)=\int_0^T \phi(x,y,t)dt
+\end{equation}
+donde $\phi$ es el flujo instantáneo. Al variar las velocidades de las hojas, creamos un mapa de intensidad no uniforme que nos permite mapear dosis complejas, incluso cóncavas.
+\end{frame}
+\begin{frame}
+  \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{image.png}
+        \caption{Dosimetría de un paciente de cáncer de amígdala con planificación 2-D convencional usando campos paralelos opuestos y boost convencional. B: El mismo paciente con un plan de intensidad modulada en que múltiples haces de diferentes intensidades inciden desde distintos ángulos para esculpir una distribución de dosis con protección del cerebro, tronco encefálico,mandíbulas, mucosa oral y glándulas parótidas.}
+        \label{fig:placeholder}
+    \end{figure}  
+\end{frame}
+
+\begin{frame}
+    La optimizaición se lleva a cabo de forma inversa según la función de objetivo, que intentamos minimizar. Matemáticamente, buscamos los pesos de los beamlets $w_j$ que minimicen la diferencia entre la dosis prescrita $D_p$ y la dosis calculada $D_{\text{calc}}$. La función a minimizar es
+    \begin{equation}
+        F=\sum_i
+W_i(D_{\text{calc},i}-D_{p,i})^2    \end{equation}
+Donde $W_i$ es el factor de importancia o peso de cada órgano (por ejemplo, es más crítico proteger el nervio óptico que el tejido graso).
+\\
+
+El cálculo de la dosis se lleva a cabo  mediante el algoritmo de convolución que considera que la dosis total en un purno es la suma de la energía liberada por los fotones primarios en todos los puntos circundantes, espacida por los electrones secundarios
+\end{frame}
+\begin{frame}
+    La gran ventaja de la IMRT es que permite un gradiente de dosis muy alto, lo que implcai que la dosis caiga drasticamente en milimetros fuera del borde del tumor. 
+    \begin{equation}
+        \nabla D= \Biggl( \frac{\partial D}{\partial x}, \frac{\partial D}{\partial y}, \frac{\partial D}{\partial z}\Biggl)
+    \end{equation}
+    Un gradiente alto es lo que permite que una zona reciba $70 \text{ Gy}$ (dosis letal para el tumor) y a solo $5 \text{ mm}$ de distancia, una estructura crítica reciba menos de $30 \text{ Gy}$.
+\end{frame}
+
+\subsection{Protonterapias}
+\begin{frame}{Concepto de Protonterapia}
+La \textbf{protonterapia}  es una modalidad avanzada de radioterapia que utiliza partículas pesadas en lugar de los rayos X (fotones) que se emplean en la radioterapia convencional para destruir células cancerosas.
+\\
+Su principal ventaja radica en la precisión física, lo que permite administrar dosis más altas de radiación al tumor con un daño mínimo al tejido sano circundante.
+\\
+A diferencia de los rayos X, que atraviesan el cuerpo liberando energía a lo largo de todo su trayecto (afectando tanto el tejido sano antes como después del tumor), los protones se pueden frenar a una profundidad específica.
+\end{frame}
+
+\begin{frame}{Protonterapia. El Pico de Bragg}
+Los protones liberan la mayor parte de su energía justo antes de detenerse, en un punto exacto llamado el \textbf{Pico de Bragg}. Cuando estas partículas penetran el organismo, su pérdida de energía por unidad de longitud es inversamente proporcional al cuadrado de su velocidad. Esta dependencia hace que la máxima pérdida de energía y mayor densidad de ionización se produzca al final del recorrido de la partícula (Pico de BRAGG), cuando su velocidad es próxima a cero.
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+    \centering
+\includegraphics[width=1\linewidth]{pico_de_bragg.png}
+    \caption{Pico de Bragg (Imagen: CERN Courier)}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{frame}{Spread Out Bragg Peak}
+    La tasa de pérdida de energía de un haz monoenergético al atravesar un medio uniforme es siempre la misma, por lo que las partículas del haz se frenarán a la misma profundidad, lo que se denomina rango de la partícula. Por tanto, la profundidad del pico de Bragg depende de la energía inicial de los protones y de los tejidos que atraviesan. Modulando la energía de las partículas incidentes, es posible extender la región del pico de Bragg para localizar la dosis en un volumen más extenso. Es decir. para asegurar una dosis uniforme en todo el volumen del tumor se superponen varios picos de Bragg de diferente energía (se lanzan protones que depositarán su energía a distintas profundidades del tumor). Esto es lo que se llama Spread Out Bragg Peak (SOBP), que podría traducirse como “ensanchamiento del pico de Bragg” o "pico de Bragg extendido".
+\end{frame}
+
+\begin{frame}{El Pico de Bragg. Fórmula de Bethe}
+La fórmula de Bethe nos permite calcular la pérdiad de energía por unidad de distancia. $S=-dE/dx$. Para una partícula con carga $ze$ y velocidad $v$ que se desplaza a través de un material con densidad de electrones $n$, el poder de frenado colisional se define como:
+\begin{equation}
+    - \frac{dE}{dx} = \frac{4\pi}{m_e c^2} \cdot \frac{n z^2}{\beta^2} \cdot \left( \frac{e^2}{4\pi\epsilon_0} \right)^2 \cdot \left[ \ln \left( \frac{2m_e c^2 \beta^2 \gamma^2}{I} \right) - \beta^2 \right]
+\end{equation}  
+\end{frame}
+\begin{frame}
+    Para modelar el pico de Bragg en una profundidad $x$. debemos integrar el inverso del poder de frenado. El alcance total $R$ de la partícula se calcula mediante la aproximación de fase continua (CSDA):
+    $$R = \int_{0}^{E_0} \frac{dE}{S(E)}$$Una aproximación empírica muy útil para cálculos rápidos es la Regla de Geiger:$$R \approx a \cdot E_0^p$$Para protones en agua, el exponente $p$ suele ser aproximadamente 1.77.
+    \begin{block}
+        No todas las partículas se detienen exactamente en el mismo punto debido a la naturaleza estocástica de las colisiones. Esto ensancha el pico y se modela usualmente con una distribución Gaussiana.
+    \end{block}
+\end{frame}
+
+
+
+
+\section*
+{Referencias}
+\begin{frame}{Referencias}
+\begin{thebibliography}{9}
+
+
+\bibitem{cris_cancer} 
+Fundación CRIS contra el Cáncer. (s. f.). \textit{Qué es el cáncer}. Recuperado el 11 de marzo de 2026, de https://criscancer.org/es/
+
+\bibitem{garcia2021}
+García Banquetero, R. (2021). \textit{Modelos matemáticos para el crecimiento de tumores} [Trabajo de Fin de Grado, Universidad de Salamanca]. Facultad de Ciencias.
+
+
+\end{thebibliography}
+    
+\end{frame}
+
+\end{document}
