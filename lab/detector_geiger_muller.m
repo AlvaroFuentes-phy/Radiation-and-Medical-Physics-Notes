@@ -1,7 +1,4 @@
-% =========================================================================
-% Práctica II: Detector Geiger-Müller (Eficiencia y Atenuación)
-% Análisis con cálculo riguroso de incertidumbres y cifras significativas
-% =========================================================================
+
 clear; clc; close all;
 
 %% 1. DATOS EXPERIMENTALES (Introduce aquí tus medidas)
